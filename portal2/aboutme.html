@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Not Available Coding — About Noah Applehans">
+  <meta name="theme-color" content="#23C65D">
+  <title>N/A — About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <nav>
+    <span class="brand">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <polygon class="tri" points="100,22 178,168 22,168" />
+        <text class="mark" x="100" y="152">N/A</text>
+      </svg>
+    </span>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="wwr/index.html">WWR</a>
+      <a href="ice.html">ICE</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="terminal">
+      <div class="bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="path">na@terminal: ~/portfolio/about</span>
+      </div>
+      <div class="screen">
+        <div id="output"></div>
+        <span class="cursor" id="cursor"></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="block" id="bio">
+    <div class="reveal">
+      <div class="section-label">01</div>
+      <h2 class="section-title">about_me</h2>
+    </div>
+    <div class="about-grid">
+
+      <div class="info-block">
+        <h3>// who_i_am</h3>
+        <p>
+          Hi — I'm Noah Applehans, a web developer, designer, and student from
+          Laramie, Wyoming. I'm currently studying web development and enjoy turning
+          ideas into clean, functional web experiences.
+        </p>
+        <p style="margin-top:1rem;">
+          When I'm not coding I'm usually out in the mountains — hiking, fly fishing,
+          or finding the next adventure.
+        </p>
+      </div>
+
+      <div class="info-block">
+        <h3>// skills.txt</h3>
+        <ul>
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>SQL</li>
+          
+        </ul>
+      </div>
+
+      <div class="info-block">
+        <h3>// currently</h3>
+        <p><span class="tag">status</span>Student &amp; web developer in training</p>
+        <p><span class="tag">focus</span>Web development, design systems, and clean code</p>
+        <p><span class="tag">location</span>Laramie, Wyoming</p>
+        <p style="margin-top:1.2rem;"><span class="blink-prompt">$ available_for_work --status&nbsp;</span></p>
+      </div>
+
+      <div class="info-block">
+        <h3>// contact</h3>
+        <ul>
+          <li>
+            <a href="mailto:daboigenius342@gmail.com" style="color:var(--green);text-decoration:none;">
+              daboigenius342@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://daboigenius342.github.io/wdd130/" style="color:var(--green);text-decoration:none;">
+              github.io / portfolio
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/noah-applehans-6a2440342/" style="color:var(--green);text-decoration:none;">
+              linkedin / noah-applehans
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>$ echo "let's build something"</p>
+    <p style="margin-top:0.6rem;">
+      <a href="mailto:daboigenius342@gmail.com">email</a> ·
+      <a href="https://daboigenius342.github.io/wdd130/">github</a> ·
+      <a href="https://www.linkedin.com/in/noah-applehans-6a2440342/">linkedin</a>
+    </p>
+    <p style="margin-top:1rem;">© 2026 Not Available Coding — N/A</p>
+  </footer>
+
+  <script>
+    (function () {
+      const output = document.getElementById('output');
+      const lines = [
+        { type: 'cmd', text: 'whoami' },
+        { type: 'out', text: 'noah-applehans' },
+        { type: 'cmd', text: 'cat bio.txt' },
+        { type: 'out', text: '// Web Developer | Designer | Student' },
+        { type: 'cmd', text: 'cat location.txt' },
+        { type: 'out', text: '// Laramie, Wyoming' },
+        { type: 'cmd', text: './launch --aboutme' },
+        { type: 'out', text: '// Loading profile... done.' },
+      ];
+      function add(text, isCmd) {
+        const div = document.createElement('div');
+        div.textContent = (isCmd ? '$ ' : '') + text;
+        output.appendChild(div);
+        return div;
+      }
+      let step = 0;
+      (function run() {
+        if (step >= lines.length) return;
+        const s = lines[step++];
+        if (s.type === 'cmd') {
+          const div = add('', true);
+          let i = 0;
+          (function tick() {
+            if (i <= s.text.length) {
+              div.textContent = '$ ' + s.text.slice(0, i++);
+              setTimeout(tick, 45);
+            } else {
+              setTimeout(run, 250);
+            }
+          })();
+        } else {
+          add(s.text);
+          setTimeout(run, 180);
+        }
+      })();
+    })();
+  </script>
+
+</body>
+</html>
