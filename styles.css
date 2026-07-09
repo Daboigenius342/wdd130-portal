@@ -272,6 +272,14 @@
     margin-bottom: 0.4rem;
   }
 
+  .profile-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10%;
+    border: 3px solid var(--green);
+    margin-bottom: 1.6rem;
+  }
+
   .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -312,6 +320,7 @@
     .blink-prompt {
       animation: blink 1s step-end infinite;
     }
+
 
  
   footer {
