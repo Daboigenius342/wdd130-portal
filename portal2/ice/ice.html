@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
 
@@ -20,13 +20,27 @@
         <text class="mark" x="100" y="152">N/A</text>
       </svg>
     </span>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="portal2/abtme/index.html">About Me</a>
-      <a href="portal2/wwr/index.html">WWR</a>
-      <a href="portal2/ice/index.html">ICE</a>
+     <div class="links">
+      <a href="../../index.html">Home</a>
+      <a href="../abtme/abtme.html">About Me</a>
+      <a href="../wwr/wwr.html">WWR</a>
+      <a href="ice.html">ICE</a>
     </div>
   </nav>
+
+  <div class="contact-forms">
+    <form action="/submit" method="post">
+      <h2>Contact Me</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+      <label for="email"> email</label>
+      <input type="email" id="email" name="email">
+      <label for="message">Message</label>
+      <input type="text" id="message" name="message">
+
+      <button class="contact-btn" type="submit">Submit</button>
+    </form>
+  </div>
 
   <section class="block" id="ice">
     <div class="reveal">

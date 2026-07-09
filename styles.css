@@ -222,7 +222,7 @@
     border-radius: 0px 0px 10px 10px;
 }
 
-  /* ===== Sections ===== */
+
   section.block {
     max-width: 1000px;
     margin: 0 auto;
@@ -253,7 +253,6 @@
     box-shadow: 0 0 8px rgba(35, 198, 93, 0.25);
   }
 
-  /* brand = the triangle logo mark in the nav */
   .brand {
     position: relative;
     display: inline-block;
@@ -314,7 +313,7 @@
       animation: blink 1s step-end infinite;
     }
 
-  /* ===== Footer ===== */
+ 
   footer {
     border-top: 1px solid var(--green-dim);
     padding: 2.5rem 1.6rem;
