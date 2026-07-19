@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#23C65D">
+  <meta name="description" content="Client / Developer Team Project report — WDD 130">
+  <title>N/A — Client Report</title>
+  <style>
+    :root {
+      --bg: #111310;
+      --fg: #23C65D;
+      --dim: #1a8f43;
+      --muted: #7d8a7f;
+      --line: #1f2a20;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 1.5rem 1.5rem 1rem;
+    }
+
+    header p.path {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin: 0 0 0.75rem;
+    }
+
+    nav a {
+      color: var(--fg);
+      text-decoration: none;
+      margin-right: 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover,
+    nav a:focus-visible { text-decoration: underline; }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin: 0 0 0.5rem;
+    }
+
+    h1::before { content: "$ "; color: var(--dim); }
+
+    h2 {
+      font-size: 1.15rem;
+      margin: 3rem 0 0.25rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+
+    h2::before { content: "// "; color: var(--dim); }
+
+    h3 {
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin: 1.75rem 0 0.25rem;
+    }
+
+    p { margin: 0.75rem 0; }
+
+    p.lede { color: var(--muted); }
+
+    a { color: var(--fg); }
+
+    a:hover,
+    a:focus-visible { background: var(--fg); color: var(--bg); }
+
+    .site-link {
+      display: inline-block;
+      margin: 1rem 0 0;
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--dim);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      body { font-size: 15px; }
+      main { padding: 2rem 1rem 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="path">na@terminal: ~/wdd130/client_report</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portal2/abtme/abtme.html">About Me</a>
+      <a href="portal2/wwr/wwr.html">WWR</a>
+      <a href="portal2/ice/ice.html">ICE</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Client / Developer Team Project — Report</h1>
+    <p class="lede">Three roles, four sites, one semester. Below is a report on each role I filled and what I took away from the project.</p>
+
+    <h2>Client Report</h2>
+    <p>As the client, I was responsible for the site plan, the content, and the images for my own site. I decided what to use by starting from the site plan I had drafted earlier in the course and narrowing it down to what three pages could actually carry. I chose images that fit the tone I described in the plan rather than filling space, and I passed everything to my developer along with an explanation of what each page was supposed to do.</p>
+    <p>I communicated with the team directly and gave input on the site plan and what I had in mind, so my developer was not working from guesses. There were no real communication issues. Because I stayed involved instead of handing off the plan and going quiet, questions got answered while there was still time to act on them.</p>
+    <p>My developer met my expectations for the site. The finished pages reflect the plan I gave them, and the parts that changed along the way changed because we talked about them first.</p>
+    <p>Next time I hire a team, I would put even more detail into the plan before the first conversation. The clearer the plan is up front, the less the developer has to interpret, and the closer the finished site lands to what I pictured.</p>
+    <a class="site-link" href="https://lindsey711235.github.io/wdd130-applehans/" target="_blank" rel="noopener">View my client site &rarr;</a>
+
+    <h2>Lead Developer Report</h2>
+    <p>As lead developer I built &#4608;&#4707;&#4667;, a site about Ethiopian culture and the Amharic language. I coded the home page myself and managed two junior developers who built the child pages: Culture and Language.</p>
+    <p>I managed my team by setting the structure before assigning anything. I created the repository, built the home page, and locked in the stylesheet, navigation, and folder layout first, so the junior devs had a working reference to match instead of inventing their own styling. Then I told each of them which page they owned and pointed them at the home page as the pattern for headers, footers, and class names.</p>
+    <p>I communicated with my client throughout and checked in to make sure what I was building was what they actually wanted. There were no significant issues. Confirming direction as I went meant I was not rebuilding finished pages later.</p>
+    <p>For publishing, I hosted the site through GitHub Pages from the repository I created and shared the live URL with the client so they could see progress themselves rather than waiting on screenshots. I re-shared the link as major pieces landed. The client did not have repository access, only the published site.</p>
+    <p>Managing the project in GitHub taught me the most. Adding collaborators, keeping several people&rsquo;s commits from colliding, and waiting for Pages to rebuild after a push were all new. Once the workflow was set, it was the part of the project that made the site feel like real work rather than a class assignment.</p>
+    <a class="site-link" href="https://daboigenius342.github.io/wdd130-Lee/" target="_blank" rel="noopener">View the site I led &rarr;</a>
+
+    <h2>Junior Developer Report</h2>
+    <p>As a junior developer I built a child page for two other teams. One was Forge of War, a site for planning tabletop armies.</p>
+
+    <h3>Communication with the team leads</h3>
+    <p>I followed my team leads and kept in contact with them about what needed to be done. There were no real communication problems. When I was not sure what a lead wanted, I asked rather than guessing and reworking it later.</p>
+
+    <h3>Expectations</h3>
+    <p>I knew what was expected of me on each site. The leads had already built their home pages and set up the CSS, so my job was clear: match the existing styling and build out the content for the page I was given.</p>
+
+    <h3>Contribution</h3>
+    <p>I was able to contribute to both sites. I made sure the tasks I was given were finished and that the page fit the rest of the site, so the lead could hand a consistent product to their client.</p>
+
+    <h3>GitHub issues</h3>
+    <p>I did not run into major issues adding my changes. Once I had access to the repository and knew which files were mine, pushing changes was straightforward. Coordinating who was editing what mattered more than the Git commands themselves.</p>
+    <p>
+      <a class="site-link" href="https://vio-rgb.github.io/wdd130-foster/" target="_blank" rel="noopener">Forge of War &rarr;</a>
+      <a class="site-link" href="https://noduh.github.io/wdd130-papa/" target="_blank" rel="noopener">Second team site &rarr;</a>
+    </p>
+
+    <h2>General Experience and Reflections</h2>
+    <p>The most challenging part was depending on other people&rsquo;s timing. When you build alone, the only schedule is yours; here a page could not move until someone else replied or pushed their work. I got around it by staying in contact with everyone I was working with, as a client, as a lead, and as a junior, instead of waiting to be contacted.</p>
+    <p>What I enjoyed most was watching three separate people&rsquo;s code turn into one coherent site, and being responsible for making that happen on the team I led. Building a page by yourself is a different exercise than building a page that has to match someone else&rsquo;s work.</p>
+    <p>If I could do it again, I would set internal deadlines earlier than the real ones. Almost everything that slowed us down was timing, not code.</p>
+    <p>I do feel more confident about real-world projects after this. Real work is a repository several people are touching, a client whose expectations you have to keep in view, and a deadline that does not move because someone was slow to reply. Working all three sides of it made it much clearer why communication is the part that actually decides whether a project finishes well.</p>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Not Available Coding — N/A</p>
+  </footer>
+
+</body>
+</html>
